@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaskImage">
+
+        <!-- Identifier for the image that represents the Imageview's content. -->
+        <attr name="image" format="reference" />
+        <!-- crop Imageview's content same as mask -->
+        <attr name="mask" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="MaskImage2">
+
+        <!-- Identifier for the image that represents the Imageview's content. -->
+        <attr name="image2" format="reference" />
+        <!-- crop Imageview's content same as mask -->
+        <attr name="mask2" format="reference" />
+    </declare-styleable>
+
+</resources>

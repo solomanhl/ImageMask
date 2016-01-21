@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maskimage="http://schemas.android.com/apk/res/com.soloman.imagemask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以下为正常图片" />
+    <!-- 无遮罩图片 -->
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_t" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以下为遮罩图片" />
+    <!-- 遮罩图片 -->
+
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以下为遮罩图片变成圆形的图片" />
+
+    <!-- 有遮罩图片 -->
+
+    <com.soloman.imagemask.MaskImage
+        android:id="@+id/imageview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        maskimage:image="@drawable/icon_t"
+        maskimage:mask="@drawable/circle" />
+
+</LinearLayout>
