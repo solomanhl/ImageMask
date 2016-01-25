@@ -15,6 +15,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.Environment;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.widget.ImageView;
 
 public class MaskImage extends ImageView {
@@ -42,12 +43,10 @@ public class MaskImage extends ImageView {
 		 * 主要代码实现
 		 */
 		// 获取图片的资源文件
-		Bitmap original = BitmapFactory.decodeResource(getResources(),
-				mImageSource);
+		Bitmap original = BitmapFactory.decodeResource(getResources(), mImageSource);
 		// 获取遮罩层图片
 		Bitmap mask = BitmapFactory.decodeResource(getResources(), mMaskSource);
-		Bitmap result = Bitmap.createBitmap(mask.getWidth(), mask.getHeight(),
-				Config.ARGB_8888);
+		Bitmap result = Bitmap.createBitmap(mask.getWidth(), mask.getHeight(), Config.ARGB_8888);//实际长宽是1.5倍
 		// 将遮罩层的图片放到画布中
 		Canvas mCanvas = new Canvas(result);// 创建一个遮罩大小的画布
 		Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);// 抗锯齿
@@ -85,5 +84,5 @@ public class MaskImage extends ImageView {
 		}
 
 	}
-
+	
 }

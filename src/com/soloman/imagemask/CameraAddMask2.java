@@ -181,7 +181,7 @@ public class CameraAddMask2 extends Activity implements OnClickListener {
 	}
 	
 	private void openShowAcivity(){
-		Intent it = new Intent(CameraAddMask2.this, ShowActivity.class);
+		Intent it = new Intent(CameraAddMask2.this, ImageAddMask2.class);
 		startActivity(it);
 	}
 

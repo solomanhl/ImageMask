@@ -1,28 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:maskimage="http://schemas.android.com/apk/res/com.soloman.imagemask"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="以下为遮罩处理过的图片" />
+        android:orientation="vertical" >
 
-    <!-- 有遮罩图片 -->
-<!-- 
-    <com.soloman.imagemask.MaskImage
-        android:id="@+id/imageview_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        maskimage:image="@drawable/icon_t"
-        maskimage:mask="@drawable/mask_image" />
-         -->
-    
-      <com.soloman.imagemask.MaskImage2
-        android:id="@+id/imageview_id2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下为正常图片" />
+        <!-- 无遮罩图片 -->
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下为遮罩图片" />
+        <!-- 遮罩图片 -->
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mask_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下为遮罩处理过的图片" />
+
+        <!-- 有遮罩图片 -->
+
+        <com.soloman.imagemask.MaskImage2
+            android:id="@+id/imageview_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            maskimage:mask2="@drawable/mask_image" />
+    </LinearLayout>
+
+</ScrollView>

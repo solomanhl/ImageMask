@@ -254,7 +254,7 @@ int id action_context_bar 0x7f09001d
 int id action_menu_divider 0x7f090002
 int id action_menu_presenter 0x7f090003
 int id action_mode_close_button 0x7f090024
-int id action_settings 0x7f09004c
+int id action_settings 0x7f09004b
 int id activity_chooser_view_content 0x7f090025
 int id always 0x7f09000f
 int id beginning 0x7f090016
@@ -286,7 +286,6 @@ int id image2 0x7f090029
 int id imageview1 0x7f090048
 int id imageview2 0x7f090049
 int id imageview_id 0x7f09004a
-int id imageview_id2 0x7f09004b
 int id listMode 0x7f090006
 int id list_item 0x7f09002a
 int id middle 0x7f090018
