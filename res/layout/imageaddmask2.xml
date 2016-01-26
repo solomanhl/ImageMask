@@ -30,7 +30,7 @@
             android:id="@+id/imageview2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mask_image" />
+            android:src="@drawable/i_kuzi_1" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:id="@+id/imageview_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            maskimage:mask2="@drawable/mask_image" />
+            maskimage:mask2="@drawable/i_kuzi_1" />
     </LinearLayout>
 
 </ScrollView>

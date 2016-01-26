@@ -13,7 +13,7 @@
         android:id="@+id/buttonLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mask_camera"
+        android:background="@drawable/c_kuzi_1"
         android:visibility="visible" >
 
         <TableLayout
